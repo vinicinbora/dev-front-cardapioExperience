@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Tailwind</title>
+
+    <style>
+        .bg-image-1 {
+            background-image: url('imagens/c-um.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: background-image 0.5s ease-in-out;
+        }
+
+
+        .bg-image-2 {
+            background-image: url('imagens/b-02.png');
+            background-size: cover;
+            background-position: center;
+            transition: background-image 0.5s ease-in-out;
+        }
+
+
+        .bg-image-3 {
+
+            background-image: url('imagens/bt03.png');
+            background-size: cover;
+            background-position: center;
+            transition: background-image 0.5s ease-in-out;
+        }
+    </style>
+
+
+</head>
+
+<body class="flex flex-col h-dvh justify-center items-center bg-black p-2 gap-4">
+
+    <div id="imageDiv"class="flex flex-col justify-between items-end bg-image-1 w-full h-[800px] bg-white rounded-3xl pt-4 ">
+
+      
+
+            <div class=" flex items-center w-full h-10 rounded-2xl p-4">
+                
+                <h1 class="text-2xl font-semibold text-white">Crepes doces:</h1>
+
+            </div>
+
+        
+
+        <div class="w-full">
+
+            <div class=" w-full h-12 ml-8 mb-20 gap-4 ">
+                
+
+                <h1 class="text-2xl font-semibold text-white mb-2">Crepe de Brownie</h1>
+                <p class="font-semibold text-xl">Massa de chocolate recheada<br>
+                    de Nutella e bownie.</p>
+            </div>
+
+            <div class="pl-7  pr-3 flex flex-row  gap-3 h-14 overflow-x-auto mb-5">
+
+                <button onclick="setBackgroundImage1()"
+                    class="w-10 h-10 border-solid border-2 border-gray-50 rounded-xl text-white bg-green-500 text-xl font-semibold flex-shrink-0">01</button>
+
+                <button id="btn2" onclick="setBackgroundImage2()"
+                    class=" w-10 h-10 border-solid border-2 border-gray-50 rounded-xl text-white text-xl font-semibold flex-shrink-0">02</button>
+
+                <button onclick="setBackgroundImage3()"
+                    class=" w-10 h-10 border-solid border-2 border-gray-50 rounded-xl text-white text-xl font-semibold flex-shrink-0">03</button>
+
+                <button onclick="setBackgroundImage3()"
+                    class=" w-10 h-10 border-solid border-2 border-gray-50 rounded-xl text-white text-xl font-semibold flex-shrink-0">04</button>
+
+                <button onclick="setBackgroundImage3()"
+                    class=" w-10 h-10 border-solid border-2 border-gray-50 rounded-xl text-white text-xl font-semibold flex-shrink-0">05</button>
+
+                <button onclick="setBackgroundImage3()"
+                    class=" w-10 h-10 border-solid border-2 border-gray-50 rounded-xl text-white text-xl font-semibold flex-shrink-0">06</button>
+
+                <button onclick="setBackgroundImage3()"
+                    class=" w-10 h-10 border-solid border-2 border-gray-50 rounded-xl text-white text-xl font-semibold flex-shrink-0">07</button>
+
+                <button onclick="setBackgroundImage3()"
+                    class=" w-10 h-10 border-solid border-2 border-gray-50 rounded-xl text-white text-xl font-semibold flex-shrink-0">08</button>
+
+                <button onclick="setBackgroundImage3()"
+                    class=" w-10 h-10 border-solid border-2 border-gray-50 rounded-xl text-white text-xl font-semibold flex-shrink-0">09</button>
+
+                <button onclick="setBackgroundImage3()"
+                    class=" w-10 h-10 border-solid border-2 border-gray-50 rounded-xl text-white text-xl font-semibold flex-shrink-0">10</button>
+
+                <button onclick="setBackgroundImage3()"
+                    class=" w-10 h-10 border-solid border-2 border-gray-50 rounded-xl text-white text-xl font-semibold flex-shrink-0">11</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
